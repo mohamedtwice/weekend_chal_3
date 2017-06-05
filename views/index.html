@@ -6,25 +6,31 @@
   <title>Weekend Challenge 3 - To Do List App</title>
   <script src="vendors/jquery-3.2.1.min.js" charset="utf-8"></script>
   <script src="scripts/todo.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
-  <h1>TO DO LIST</h1>
-  <div class="wrap">
-    <div id="task-list">
-      <ul id="myTasks">
+  <div class="col-md-8 col-md-offset-2">
+    <div class="wrap">
 
-      </ul>
-      <ul id="completedTasks">
 
-      </ul>
+      <div id="task-list">
+        <h1>TO DO LIST</h1>
+
+        <ul id="myTasks">
+
+        </ul>
+        <ul id="completedTasks">
+
+        </ul>
+      </div>
+      <form id="addTaskform" autocomplete="off">
+        <input id="addTask" type=" text " name="new-task " placeholder="Add a new item... " />
+      </form>
     </div>
-    <form id="addTaskform" autocomplete="off">
-      <input id="addTask" type=" text " name="new-task " placeholder="Add a new item... " />
-    </form>
+    <!-- #wrap -->
   </div>
-  <!-- #wrap -->
 
 </body>
 

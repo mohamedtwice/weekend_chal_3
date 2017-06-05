@@ -3,11 +3,11 @@
 body {
   font: normal 14px 'Open Sans', Arial, sans-serif;
   color: #999;
-  background: #f1f1f1;
+  background: #f5f67f;
 }
 
 .wrap {
-  width: 600px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -15,7 +15,7 @@ body {
   width: 88%;
   min-height: 300px;
   background: #fff;
-  box-shadow: 2px 2px 0px #ddd;
+  box-shadow: 4px 4px 0px #d4d4d4;
   margin-top: 40px;
   padding: 22px 6%;
 }
@@ -49,9 +49,10 @@ body {
 }
 
 #task-list li {
-  font-size: 1.2em;
-  padding: 8px 0;
+  font-size: 1.5em;
+  padding: 10px 15px;
   overflow: hidden;
+  color: #111;
 }
 
 #task-list li span {
@@ -96,10 +97,10 @@ body {
 }
 
 #addTask {
-  width: 100%;
+  width: 88%;
   font: normal 1.2em 'Open Sans', Arial, sans-serif;
   color: #999;
-  box-shadow: 2px 2px 0px #ddd;
+  box-shadow: 4px 4px 0px #d4d4d4;
   border: none;
   border-radius: none;
   display: block;
@@ -127,7 +128,7 @@ body {
 /* Darker background-color on hover */
 
 ul li:hover {
-  background: #ddd;
+  background: #f5f6f7;
 }
 
 
@@ -200,7 +201,7 @@ ul li:nth-child(odd) {
 /* Darker background-color on hover */
 
 ul li:hover {
-  background: #ddd;
+  background: #f5f6f7;
 }
 
 
@@ -300,15 +301,17 @@ input {
 }
 
 .delete-button {
-  background: red;
+  background: #f5f6f7;
   height 100%;
   width: 20px;
 }
 
 #task-list li .delete-button {
-  width: 25px;
-  line-height: 4px;
-  height: 15px !important;
+  width: auto;
+  border: 0px;
+  color: red;
+  padding: 1px 7px 3px !important;
+  font-size: .8em;
 }
 
 .completed-button {
@@ -319,15 +322,14 @@ input {
 }
 
 .completed-button {
-  background: green;
+  background: #fefeff;
   height 100%;
   width: 20px;
 }
 
 .completed-button2 {
-  background: white;
+  background: #efefef;
   height 100%;
-  width: 20px;
   float: right;
 }
 
@@ -338,15 +340,22 @@ input {
 }
 
 #task-list li .completed-button {
-  width: 25px;
-  line-height: 4px;
-  height: 15px !important;
+  width: auto;
+  border: 0px solid green;
+  color: white;
+  padding: 1px 7px 3px !important;
+  background: green;
+  font-size: .8em;
 }
 
 #task-list li .completed-button2 {
-  width: 25px;
-  line-height: 4px;
-  height: 15px !important;
+  width: auto;
+  border: 0px solid gold;
+  color: #fff;
+  padding: 1px 7px 3px !important;
+  float: right;
+  background: gold;
+  font-size: .8em;
 }
 
 input[type="checkbox"] {
@@ -355,4 +364,13 @@ input[type="checkbox"] {
 
 .completeditem {
   text-decoration: line-through;
+}
+
+h1 {
+  font-size: 2em !important;
+  font-weight: 800;
+  border-bottom: 4px solid;
+  padding-bottom: 5px;
+  display: inline-block;
+  color: #4e4e4e;
 }

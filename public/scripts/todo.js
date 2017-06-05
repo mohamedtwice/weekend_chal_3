@@ -48,19 +48,19 @@ function getTasks() {
           if (response[i].completed === false) {
             var listItem = '<li data-id="' + response[i].id + '" class="taskitem">';
             listItem += response[i].task;
-            listItem += '<span id="' + response[i].id + '" class="delete-button" >';
-            listItem += '</span>';
-            listItem += '<span id="' + response[i].id + '" class="completed-button" >';
-            listItem += '</span>';
+            listItem += '<button id="' + response[i].id + '" class="delete-button" >delete';
+            listItem += '</button>';
+            listItem += '<button id="' + response[i].id + '" class="completed-button" > completed';
+            listItem += '</button>';
             listItem += '</li>';
             $('#myTasks').append(listItem);
           } else {
             var completedItem = '<li data-id="' + response[i].id + '" class="completeditem">';
             completedItem += response[i].task;
-            completedItem += '<span id="' + response[i].id + '" class="delete-button" >';
-            completedItem += '</span>';
-            completedItem += '<span id="' + response[i].id + '" class="completed-button2" >';
-            completedItem += '</span>';
+            completedItem += '<button id="' + response[i].id + '" class="delete-button" >delete';
+            completedItem += '</button>';
+            completedItem += '<button id="' + response[i].id + '" class="completed-button2" > not completed';
+            completedItem += '</button>';
             completedItem += '</li>';
             $('#completedTasks').append(completedItem);
           }
