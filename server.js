@@ -82,9 +82,6 @@ app.post('/update', function(req, res) {
     else {
       console.log('connected to db');
       connection.query('UPDATE todolist SET completed = $1 WHERE id = $2', [true, req.body.id]);
-      // UPDATE to_do_list_table
-      // SET completed = 'Y'
-      // WHERE task LIKE '%couch%';
       done();
       res.send(200);
     } // end elseif
@@ -103,9 +100,6 @@ app.post('/updateagain', function(req, res) {
     else {
       console.log('connected to db');
       connection.query('UPDATE todolist SET completed = $1 WHERE id = $2', [false, req.body.id]);
-      // UPDATE to_do_list_table
-      // SET completed = 'Y'
-      // WHERE task LIKE '%couch%';
       done();
       res.send(200);
     } // end elseif
