@@ -124,5 +124,8 @@ function deleteTasks() {
       console.log('back from server with:', response);
     }
   });
-  $(this).parent().remove();
+  var ask = confirm('Are you sure?');
+  if (ask) {
+    $(this).parent().remove();
+  }
 } //end delete_task
